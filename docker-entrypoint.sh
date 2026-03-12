@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-VITE_GRAPHQL_URI="${VITE_GRAPHQL_URI:-http://54.159.15.35/graphql}"
+VITE_GRAPHQL_URI="${VITE_GRAPHQL_URI:-http://54.159.15.35:8082/graphql}"
 VITE_SERVER_URI="${VITE_SERVER_URI:-http://54.159.15.35:8082}"
 
 find /usr/share/nginx/html/assets -name '*.js' -exec sed -i \
