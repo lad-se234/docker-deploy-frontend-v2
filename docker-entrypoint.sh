@@ -11,3 +11,4 @@ find /usr/share/nginx/html/assets -name '*.js' -exec sed -i \
 "s|__VITE_SERVER_URI_PLACEHOLDER__|${VITE_SERVER_URI}|g" {} +
 
 echo "Configured"
+exec nginx -g 'daemon off;'
