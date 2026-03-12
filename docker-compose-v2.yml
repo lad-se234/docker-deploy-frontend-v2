@@ -1,0 +1,7 @@
+services:
+  frontend-v2:
+    image: lingth/234-deploylab-frontend:v2
+    pull_policy: always
+    ports:
+      - "8083:8080"
+    restart: unless-stopped
