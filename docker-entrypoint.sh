@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
 
-VITE_GRAPHQL_URI="${VITE_GRAPHQL_URI:-http://54.159.15.35:8084/graphql}"
-VITE_SERVER_URI="${VITE_SERVER_URI:-http://54.159.15.35:8084}"
+VITE_GRAPHQL_URI="${VITE_GRAPHQL_URI:-http://13.221.25.171:8084/graphql}"
+VITE_SERVER_URI="${VITE_SERVER_URI:-http://13.221.25.171:8084}"
 
 find /usr/share/nginx/html/assets -name '*.js' -exec sed -i \
 "s|__VITE_GRAPHQL_URI_PLACEHOLDER__|${VITE_GRAPHQL_URI}|g" {} +
